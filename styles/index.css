@@ -46,6 +46,10 @@
 a {
   text-decoration: none;
 }
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 /* header styles */
 
@@ -91,8 +95,35 @@ header {
 .hero-banner {
   max-width: 1440px;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .banner-image {
   width: 100%;
+}
+.orange-fill {
+  color: #ff900e;
+}
+.medium-font {
+  font-weight: 500;
+}
+
+.feature-content {
+  max-width: 500px;
+}
+
+.feature-content > h3 {
+  font-size: 2.8rem;
+}
+
+.teams {
+  padding: 100px 0;
+  align-items: center;
+  gap: 100px;
+}
+
+.teams-image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
