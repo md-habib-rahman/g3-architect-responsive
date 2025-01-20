@@ -47,7 +47,7 @@ a {
   text-decoration: none;
 }
 main {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -68,7 +68,7 @@ main {
 .nav-bar {
   align-items: center;
   justify-content: space-between;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 25px 0;
 }
@@ -90,7 +90,7 @@ header {
 }
 
 .hero-banner {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 50px;
 }
@@ -129,6 +129,7 @@ header {
   align-items: center;
   /* gap: 50px; */
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .feature-items {
@@ -188,6 +189,50 @@ header {
   font-weight: 400px;
 }
 
+.fact-text {
+  max-width: 350px;
+}
+
+.fact-text > h4 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.fact-text > p {
+  font-size: 0.8rem;
+  margin-bottom: 50px;
+}
+
+.facts-cards {
+  /* margin-top: 100px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 100px;
+  /* align-items: center; */
+  /* gap: 50px; */
+}
+
+.fact-card {
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border: 1px solid #ff900e;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.fact-title {
+  font-size: 2.5rem;
+}
+.fact-card p {
+  font-size: 1.1rem;
+}
+
 @media screen and (max-width: 576px) {
   .teams,
   .nav-bar,
@@ -195,21 +240,41 @@ header {
     flex-direction: column;
   }
 
-  .banner-content {
+  .banner-content,
+  .fact-text {
     max-width: 400px;
   }
 
-  .teams-image-container {
+  .teams-image-container,
+  .facts-cards {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 
-  .feature-content {
-    max-width: 350px;
+  .fact-card {
+    margin: 0 auto;
+  }
+
+  .feature-content,
+  .fact-text > h4,
+  .fact-text > p {
+    max-width: 400px;
+  }
+
+  .fact-text > h4,
+  .fact-text > p {
+    padding-left: 20px;
   }
 
   .feature-image {
     text-align: center;
-    width: 100%;
+    width: 90%;
+    /* gap: 30px; */
+  }
+
+  .feature-items > h3,
+  p {
+    max-width: 350px;
   }
 
   .experience {
