@@ -78,18 +78,15 @@ header {
 }
 
 .banner-content {
-  max-width: 860px;
+  max-width: 800px;
   text-align: center;
+  padding: 50px 0;
+  margin: 0 auto;
 }
 
 .banner-title {
   font-size: 4rem;
   font-weight: 700;
-}
-
-.banner-content {
-  padding: 50px 0;
-  margin: 0 auto;
 }
 
 .hero-banner {
@@ -126,4 +123,96 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
+}
+
+.loving-feature {
+  align-items: center;
+  /* gap: 50px; */
+  justify-content: space-between;
+}
+
+.feature-items {
+  max-width: 500px;
+}
+
+.loving-feature-title {
+  max-width: 500px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+  padding-right: 120px;
+  margin-bottom: 20px;
+}
+
+.feature-item {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin: 20px;
+}
+
+.feature-image {
+  width: 50%;
+  position: relative;
+}
+
+.feature-image img {
+  width: 90%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.experience {
+  position: absolute;
+  bottom: -30px;
+  left: -50px;
+  text-align: center;
+  /* width: 30%;
+  height: auto; */
+}
+
+.experience > h4 {
+  font-size: 4rem;
+}
+
+.experience > p {
+  font-size: 1.5 rem;
+  font-weight: 400px;
+}
+
+@media screen and (max-width: 576px) {
+  .teams,
+  .nav-bar,
+  .loving-feature {
+    flex-direction: column;
+  }
+
+  .banner-content {
+    max-width: 400px;
+  }
+
+  .teams-image-container {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-content {
+    max-width: 350px;
+  }
+
+  .feature-image {
+    text-align: center;
+    width: 100%;
+  }
+
+  .experience {
+    left: 0;
+  }
 }
