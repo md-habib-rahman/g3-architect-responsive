@@ -193,11 +193,16 @@ header {
   max-width: 350px;
 }
 
+.sponsors {
+  text-align: center;
+}
+.sponsor-title,
 .fact-text > h4 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
+.sponsor-text,
 .fact-text > p {
   font-size: 0.8rem;
   margin-bottom: 50px;
@@ -210,6 +215,18 @@ header {
   margin-bottom: 100px;
   /* align-items: center; */
   /* gap: 50px; */
+}
+
+.sponsor-images {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 150px;
+  filter: grayscale(1);
+  margin-bottom: 100px;
+}
+
+.sponsor-images img {
+  width: 100%;
 }
 
 .fact-card {
@@ -229,7 +246,27 @@ header {
 .fact-title {
   font-size: 2.5rem;
 }
+
 .fact-card p {
+  font-size: 1.1rem;
+}
+
+footer {
+  max-width: 1200px;
+  background-color: rgba(255, 144, 14, 0.1);
+  margin: 0 auto;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin-bottom: 200px;
+}
+
+footer div {
+  text-align: center;
+  /* margin: 40px auto; */
+  padding: 40px;
   font-size: 1.1rem;
 }
 
